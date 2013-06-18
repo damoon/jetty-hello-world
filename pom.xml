@@ -18,6 +18,7 @@
 		<powermock.version>1.4.12</powermock.version>
 		<javax.version>3.0.1</javax.version>
 
+		<metrics.version>2.2.0</metrics.version>
 
 		<jetty.version>9.0.3.v20130506</jetty.version>
 		<jersey.version>1.7</jersey.version>
@@ -58,6 +59,27 @@
 			<version>${slf4j.version}</version>
 		</dependency>
 
+		<!-- jetty 8 is the newest in metrics -->
+		<!-- dependency>
+			<groupId>com.yammer.metrics</groupId>
+			<artifactId>metrics-jetty</artifactId>
+			<version>${metrics.version}</version>
+		</dependency -->
+		<dependency>
+			<groupId>com.yammer.metrics</groupId>
+			<artifactId>metrics-jersey</artifactId>
+			<version>${metrics.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.yammer.metrics</groupId>
+			<artifactId>metrics-servlet</artifactId>
+			<version>${metrics.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.yammer.metrics</groupId>
+			<artifactId>metrics-annotation</artifactId>
+			<version>${metrics.version}</version>
+		</dependency>
 
 		<dependency>
 			<groupId>com.sun.jersey</groupId>

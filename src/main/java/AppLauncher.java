@@ -28,7 +28,7 @@ public class AppLauncher
 			{
 				// Must configure at least one JAX-RS resource or the
 				// server will fail to start.
-				bind(HelloGuice.class);
+				bind(HelloWorld.class);
 				bind(GuicyInterface.class).to(GuicyInterfaceImpl.class);
 
 		        Map<String, String> params = new HashMap<>();

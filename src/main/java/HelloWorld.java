@@ -18,16 +18,16 @@ import com.yammer.metrics.annotation.Timed;
 
 @Singleton
 @Path("/helloguice")
-public class HelloGuice
+public class HelloWorld
 {
 	private final Logger logger;
 
 	private final GuicyInterface gi;
 
-	private final Meter callsMeter = Metrics.newMeter(HelloGuice.class, "Requests", "calls", TimeUnit.SECONDS);
+	private final Meter callsMeter = Metrics.newMeter(HelloWorld.class, "Requests", "calls", TimeUnit.SECONDS);
 	
 	@Inject
-	public HelloGuice(final GuicyInterface gi, final Logger logger)
+	public HelloWorld(final GuicyInterface gi, final Logger logger)
 	{
 		this.gi = gi;
 		this.logger = logger;

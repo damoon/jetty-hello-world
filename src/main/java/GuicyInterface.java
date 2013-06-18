@@ -1,3 +1,4 @@
-public interface GuicyInterface {
-   String get();
+public interface GuicyInterface
+{
+	String get();
 }

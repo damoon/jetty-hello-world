@@ -4,9 +4,9 @@
 	<modelVersion>4.0.0</modelVersion>
 	<name>jettyTest</name>
 
-		<artifactId>jettyTest</artifactId>
-		<groupId>com.suchgenie</groupId>
-		<version>0.0.1-SNAPSHOT</version>
+	<artifactId>jettyTest</artifactId>
+	<groupId>com.suchgenie</groupId>
+	<version>0.0.1-SNAPSHOT</version>
 
 
 	<properties>
@@ -17,8 +17,8 @@
 		<junit.version>4.10</junit.version>
 		<powermock.version>1.4.12</powermock.version>
 		<javax.version>3.0.1</javax.version>
-		
-		
+
+
 		<jetty.version>9.0.3.v20130506</jetty.version>
 		<jersey.version>1.7</jersey.version>
 		<guice.verion>3.0</guice.verion>
@@ -46,11 +46,19 @@
 			<artifactId>jetty-servlet</artifactId>
 			<version>${jetty.version}</version>
 		</dependency>
+
 		<dependency>
-			<groupId>com.google.inject</groupId>
-			<artifactId>guice</artifactId>
-			<version>${guice.verion}</version>
+			<groupId>org.sonatype.sisu</groupId>
+			<artifactId>sisu-guice</artifactId>
+			<version>3.1.4</version>
 		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<version>${slf4j.version}</version>
+		</dependency>
+
+
 		<dependency>
 			<groupId>com.sun.jersey</groupId>
 			<artifactId>jersey-server</artifactId>

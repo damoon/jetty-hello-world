@@ -1,6 +1,10 @@
-public class GuicyInterfaceImpl implements GuicyInterface {
- 
-   public String get() {
-      return GuicyInterfaceImpl.class.getName();
-   }
+import com.google.inject.Singleton;
+
+@Singleton
+public class GuicyInterfaceImpl implements GuicyInterface
+{
+	public String get()
+	{
+		return GuicyInterfaceImpl.class.getName();
+	}
 }
